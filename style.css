@@ -67,6 +67,7 @@ body {
     font-size: 35px;
     cursor: pointer;
     animation: blink 1s steps(5, start) infinite;
+    color: white;
 }
 
 #arrow:hover {
@@ -93,29 +94,29 @@ body {
 }
 
 #about p{
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
     font-weight: 300;
-    text-align: center;
     padding: 20px;
+    border-top: 10px;
     
 }
     
 .form {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 15px;
 }
 
 .form input {
-    width: 40%;
+    width: 50%;
     padding: 5px;
     border: none;
     border-radius: 5px 0px 0px 5px;
 }
 
 .form button{
-    width: 10%;
+    width: 20%;
     padding: 5px;
     color: #111112;
     border: none;
@@ -131,4 +132,37 @@ body {
 .form button:hover {
     background-color: black;
     color: beige;
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 40px;
+    }
+    .container .name h5 {
+        font-size: 25px;
+    }
+
+    #about p {
+        max-width: 90%;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        
+    }
+
+    .form {
+        font-size: 12px;
+
+    }
+
+    .form button {
+        font-size: 12px;
+    }
+
+
+    
 }
